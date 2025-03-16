@@ -44,7 +44,7 @@ reclame_tekst5 = list(reclame_tekst4)
 print(reclame_tekst5) # deze regel toegevoegd om de kompleet lijst uit te printen
 for el in reclame_tekst5:
     if len(el) > 4:
-        print(el) # item ofwel el is al hoofdletter
+        print(el.upper()) # item ofwel el is al hoofdletter
         print(len(el)) # deze regel toegevoegd om de werkelijk lengte aan te geven van ieder woord
     else:
-        print(el.lower()) # item ofwel el wordt kleinletter
+        print(el.lower()) # item ofwel el wordt kleinletter. Jammer genoeg krijg ik de items Liter en slecht niet omgezet en weet geen raad mee!
