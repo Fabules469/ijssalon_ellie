@@ -1,3 +1,5 @@
+from helper import decoreer
+
 prijzen_dictionary = {
     "Aardbei" : "3",
     "Vanille" : "4",
@@ -39,9 +41,10 @@ for el in reclame_tekst4:
     print(el.lower()) # kleinletter omzetten en onder elkaar uitprinten
 
 print()
-print()
 reclame_tekst5 = list(reclame_tekst4)
-print(reclame_tekst5) # deze regel toegevoegd om de kompleet lijst uit te printen
+print(reclame_tekst5) # deze regel toegevoegd om de kompleet lijst uit te printen   
+print()
+decoreer("Aanbieding")
 for el in reclame_tekst5:
     if len(el) > 4:
         print(el.upper()) # item ofwel el is al hoofdletter
