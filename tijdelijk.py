@@ -42,9 +42,8 @@ for el in reclame_tekst4:
 
 print()
 reclame_tekst5 = list(reclame_tekst4)
-print(reclame_tekst5) # deze regel toegevoegd om de kompleet lijst uit te printen   
-print()
-decoreer("Aanbieding")
+print(reclame_tekst5) # deze regel toegevoegd om de kompleet lijst uit te printen
+decoreer("Aanbieding")   
 for el in reclame_tekst5:
     if len(el) > 4:
         print(el.upper()) # item ofwel el is al hoofdletter
