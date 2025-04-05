@@ -8,13 +8,27 @@ def decoreer(tekst = ""):
 
 #decoreer("Restaurant De Gouden Hoek")
 
-def fooi_pp(bedrag, personen):    
-    bedrag_pp = bedrag/personen   
-    return f"Het bedrag per persoon is {bedrag_pp} euro"
+def fooi_pp(bedrag, personen): 
+    try:   
+        bedrag_pp = bedrag/personen
+    except:
+        bedrag_pp = "??"
+        print(f"Bedrag is: {bedrag_pp}")
+        exit()
+    else:
+        return f"Het bedrag per persoon is {bedrag_pp} euro"    
+        
+
 
 def onderstreep(tekst):
     uit = []
     uit.append(tekst)
     uit.append(len(tekst) * "=")
+    print((len(tekst) * "="))
+    print(tekst)
+    print((len(tekst) * "="))
     return uit
-        
+    
+print(fooi_pp(100, 2))
+print()
+print(onderstreep("Test programma"))
