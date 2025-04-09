@@ -9,3 +9,4 @@ print()
 
 for el in uitvoer:    
     print(el)
+    
