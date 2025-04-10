@@ -16,15 +16,13 @@ def fooi_pp(bedrag, personen):
     else:
         return f"Het bedrag per persoon is {bedrag_pp} euro"    
         
-def onderstreep(tekst):
-    uit = []
-    uit.append(tekst)
-    uit.append(len(tekst) * "=")
-    #print((len(tekst) * "="))
-    #print(tekst)
-    #print((len(tekst) * "="))
-    return uit
+def onderstreep(tekst=""):
+    lengte = len(tekst) + 15
+    print(lengte * "=")
     
-#print(fooi_pp(100, 2))
-#print()
-#print(onderstreep("Test programma"))
+
+def som(dict_naam):
+    totaal = 0
+    for item in dict_naam:
+        totaal += dict_naam[item]
+    return totaal
